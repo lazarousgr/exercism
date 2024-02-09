@@ -11,5 +11,3 @@ def response(hey_bob):
         bob_response = "Fine. Be that way!"
         
     return bob_response
-
-print("Whatever?     ".strip(), 2)
