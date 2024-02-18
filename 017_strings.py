@@ -18,8 +18,7 @@ def remove_suffix_ness(word):
     return re.sub('i$', 'y', re.sub('ness$', '', word))
 
 def adjective_to_verb(sentence, index):
-    sentence_to_list = sentence.split()
-    return re.sub('\\.$', '', sentence_to_list[index]) + 'en'
+    return re.sub('\\.$', '', sentence.split()[index]) + 'en'
     
     
 print(adjective_to_verb('I need to make that bright.', -1))
